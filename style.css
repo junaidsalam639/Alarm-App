@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgb(84, 126, 247) , rgba(84, 125, 247, 0.548) 50% , #ffffff 50% );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 350px;
+    width: 500px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.time {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.time h1 {
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+}
+
+.set {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.set input {
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 80px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+button {
+    background-color: rgb(84, 126, 247);
+    font-weight: bolder;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.alarms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.alarms .alarmChild {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    color: rgb(95, 95, 95);
+    font-size: 18px;
+}
+
+i {
+    color: rgb(84, 126, 247);
+    cursor: pointer;
+}
+
+
+
+
+.radio-container {
+    position: relative;
+    width: 40px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.radio-container input[type="checkbox"] {
+    opacity: 0;
+}
+
+.radio-container label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 26px;
+    border-radius: 50px;
+    background-color: #eee;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.radio-container input[type="checkbox"]:checked+label {
+    background-color: rgb(84, 126, 247);
+}
+
+.ball {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.radio-container input[type="checkbox"]:checked+label+.ball {
+    transform: translateX(100%);
+}

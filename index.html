@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Alarm</title>
+</head>
+<body>
+    <div class="container">
+        <div class="time">
+            <h1>
+                <span id="hours"></span>
+                :
+                <span id="minutes"></span>
+                :
+                <span id="seconds"></span>
+            </h1>
+        </div>
+        <div class="set">
+            <input type="number" id="hoursArlamInp" placeholder="Hours">
+            <input type="number" id="minutesArlamInp" placeholder="Minute">
+        </div>
+        <div class="btn">
+            <button onclick="add()">Add Alarm</button>
+        </div>
+        <div class="alarms" id="alarm">
+
+        </div>
+    </div>
+    <script src="script.js">
+        
+    </script>
+</body>
+
+</html>
